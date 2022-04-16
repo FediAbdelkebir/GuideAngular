@@ -1,7 +1,8 @@
 import { Component, NgModule, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-
-
+import { Ng2SearchPipeModule } from "ng2-search-filter";
 
 @Component({
   selector: 'app-products',
@@ -10,11 +11,12 @@ import { Router } from '@angular/router';
 })
 
 export class ProductsComponent implements OnInit {
+  filterTerm:any;
   item:any;
   listproducts=[
-  { "id": 1001, "name": "Regular" ,"image":"","likes":10},
-  { "id": 1002, "name": "Chocolate","image":"","likes":8 },
-  { "id": 1004, "name": "Devil's Food","image":"","likes":5 }];
+  { "id": 1001, "name": "Regular" ,"image":"","likes":10,"Prix":65},
+  { "id": 1002, "name": "Chocolate","image":"","likes":8,"Prix":80 },
+  { "id": 1004, "name": "Devil's Food","image":"","likes":5,"Prix":75 }];
   constructor(private router: Router) { }
 
   ngOnInit(): void {

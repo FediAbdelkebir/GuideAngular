@@ -199,13 +199,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </div>
 </div>
+
 <div class="eltd-full-width">
 <div class="eltd-full-width-inner">
 <div class="eltd-grid-row">
 <div class="eltd-page-content-holder eltd-grid-col-12">
 <div class="eltd-row-grid-section-wrapper "><div class="eltd-row-grid-section"><div class="vc_row wpb_row vc_row-fluid vc_custom_1509370291364"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="eltd-pl-holder eltd-standard-layout eltd-normal-space eltd-three-columns eltd-info-below-image   eltd-product-info-large">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search..."
+      [(ngModel)]="filterTerm"
+    />
 <div class="eltd-pl-outer eltd-outer-space ">
-    <div class="eltd-pli eltd-item-space eltd-woo-image-normal-width" *ngFor="let x of listproducts">
+    <div class="eltd-pli eltd-item-space eltd-woo-image-normal-width" *ngFor="let x of listproducts | filter: filterTerm;">
         <div class="eltd-pli-inner">
         <div class="eltd-pli-image">
         <a itemprop="url" href="#">
@@ -247,7 +254,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="yith-wcwl-wishlistaddresponse"></div>
         </div>
         <div class="clear"></div> </div>
-        <div class="eltd-pli-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#036;</span>65.00</span></div>
+        <div class="eltd-pli-price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#036;</span>{{x.Prix}}</span></div>
         </div>
         </div>
         <div class="eltd-pli-text-wrapper-info-bottom-holder clearfix">
