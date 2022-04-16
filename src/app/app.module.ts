@@ -45,7 +45,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
         path:'NotFound',
         component:NotFoundComponent
       },{
-        path:'DetailProduct/:id',
+        path:'DetailProduct/:id/:image',
         component:DetailProductComponent
       },
       {path: '**', redirectTo: 'NotFound'}])

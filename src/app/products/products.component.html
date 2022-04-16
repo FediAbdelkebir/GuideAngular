@@ -216,10 +216,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="eltd-pli-inner">
         <div class="eltd-pli-image">
         <a itemprop="url" href="#">
-        <img width="1100" height="1100" src="https://trackstore.qodeinteractive.com/wp-content/uploads/2017/10/runing-shop-1.jpg" class="attachment-full size-full wp-post-image" alt="d" srcset="https://trackstore.qodeinteractive.com/wp-content/uploads/2017/10/runing-shop-1.jpg 1100w, https://trackstore.qodeinteractive.com/wp-content/uploads/2017/10/runing-shop-1-150x150.jpg 150w, https://trackstore.qodeinteractive.com/wp-content/uploads/2017/10/runing-shop-1-300x300.jpg 300w, https://trackstore.qodeinteractive.com/wp-content/uploads/2017/10/runing-shop-1-768x768.jpg 768w, https://trackstore.qodeinteractive.com/wp-content/uploads/2017/10/runing-shop-1-1024x1024.jpg 1024w, https://trackstore.qodeinteractive.com/wp-content/uploads/2017/10/runing-shop-1-550x550.jpg 550w, https://trackstore.qodeinteractive.com/wp-content/uploads/2017/10/runing-shop-1-606x606.jpg 606w, https://trackstore.qodeinteractive.com/wp-content/uploads/2017/10/runing-shop-1-100x100.jpg 100w" sizes="(max-width: 1100px) 100vw, 1100px" /> </a>
+        <img width="1100" height="1100" src="{{x.image}}" class="attachment-full size-full wp-post-image" alt="image"  sizes="(max-width: 1100px) 100vw, 1100px" /> </a>
         </div>
         <div class="eltd-pli-overlay">
-        <div class="eltd-pli-add-to-cart eltd-default-skin" [routerLink]="['/DetailProduct',x.id]">
+        <div class="eltd-pli-add-to-cart eltd-default-skin" [routerLink]="['/DetailProduct',x.id,x.image]">
         <a rel="nofollow"  data-quantity="1" data-product_id="95" data-product_sku="01" class="button add_to_cart_button ajax_add_to_cart eltd-button"><span class="eltd-add-to-cart-button-icon ion-ios-cart"></span>Details</a> </div>
         <div class="eltd-pli-quicklook">
         <div class="eltd-yith-wcqv-holder" ><a class="yith-wcqv-button" data-product_id="95" (click)="like(x.id)"><span class="yith-wcqv-button-icon ion-ios-eye" ></span><span > Like</span></a></div> </div>
