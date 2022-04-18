@@ -218,11 +218,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a itemprop="url" href="#">
         <img width="1100" height="1100" src="{{x.image}}" class="attachment-full size-full wp-post-image" alt="image"  sizes="(max-width: 1100px) 100vw, 1100px" /> </a>
         </div>
+        
         <div class="eltd-pli-overlay">
+
         <div class="eltd-pli-add-to-cart eltd-default-skin" [routerLink]="['/DetailProduct',x.id,x.image]">
         <a rel="nofollow"  data-quantity="1" data-product_id="95" data-product_sku="01" class="button add_to_cart_button ajax_add_to_cart eltd-button"><span class="eltd-add-to-cart-button-icon ion-ios-cart"></span>Details</a> </div>
         <div class="eltd-pli-quicklook">
         <div class="eltd-yith-wcqv-holder" ><a class="yith-wcqv-button" data-product_id="95" (click)="like(x.id)"><span class="yith-wcqv-button-icon ion-ios-eye" ></span><span > Like</span></a></div> </div>
+        <div class="eltd-pli-quicklook" style="width:350px;background-color:#ff0000">
+            <div class="eltd-yith-wcqv-holder" ><a class="yith-wcqv-button" data-product_id="95" (click)="delete(x.id)"><span class="yith-wcqv-button-icon ion-ios-eye" ></span><span > Delete</span></a></div> </div>
         </div>
         </div>
         <div class="eltd-pli-text-wrapper">

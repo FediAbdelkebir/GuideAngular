@@ -1,19 +1,18 @@
 {
   "product": [
     {
-      "id": 1,
-      "title": "Product 1",
-      "author": "typicode"
+      "id": 1002,
+      "name": "Chocolate",
+      "image": "https://trackstore.qodeinteractive.com/wp-content/uploads/2017/10/Untitled-16.jpg",
+      "likes": 8,
+      "Prix": 80
     },
-	    {
-      "id": 2,
-      "title": "Product 2",
-      "author": "typicode"
-    },
-	    {
-      "id": 3,
-      "title": "product 3",
-      "author": "typicode"
+    {
+      "id": 1004,
+      "name": "Devil's Food",
+      "image": "https://trackstore.qodeinteractive.com/wp-content/uploads/2017/10/cs-home-shop-6.jpg",
+      "likes": 5,
+      "Prix": 75
     }
   ]
 }

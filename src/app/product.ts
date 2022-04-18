@@ -1,6 +1,9 @@
 export class Product {
     id!: number;
-    title!: String;
-    author!: String;
+    name!: String;
+    image!: String;
+    likes!:number;
+    prix!:number;
+
   
 }

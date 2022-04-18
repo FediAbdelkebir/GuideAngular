@@ -20,16 +20,9 @@ export class ProductService {
   public findAll(): Observable<any> {
     return this.http.get(this.BackEndURL+"product")
   }
-  Delete(id:any){
-    return this.http.post(this.BackEndURL+id,httpOptions).pipe(
-      map(
-        userData => {
-          /*this.auth.logOut();*/
-          
-        }
-      )
-  
-    );
+  Delete(id:number){
+    console.log("clicked"+id)
+    return this.http.delete('http://localhost:3000/product/'+id);
     
   }
   update(id:number,title:String,author:String){
