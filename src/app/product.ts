@@ -3,7 +3,7 @@ export class Product {
     name!: String;
     image!: String;
     likes!:number;
-    prix!:number;
+    Prix!:number;
 
   
 }

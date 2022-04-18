@@ -14,6 +14,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
 import { HomeComponent } from './home/home.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { ProductShowcaseComponent } from './product-showcase/product-showcase.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     FormProductComponent,
     NotFoundComponent,
     DetailProductComponent,
-    HomeComponent
+    HomeComponent,
+    ProductShowcaseComponent
     
   ],
   imports: [
@@ -49,6 +51,9 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
       },{
         path:'DetailProduct/:id/:image',
         component:DetailProductComponent
+      },{
+        path:'ShowCase',
+        component:ProductShowcaseComponent
       },
       {path: '**', redirectTo: 'NotFound'}])
   ],

@@ -15,7 +15,7 @@ export class ProductService {
   }
   public Save(product:Product){
     console.log(product);
-    return this.http.post<Product>(this.BackEndURL+"",product)
+    return this.http.post<Product>(this.BackEndURL+"product",product)
   }
   public findAll(): Observable<any> {
     return this.http.get(this.BackEndURL+"product")
