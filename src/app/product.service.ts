@@ -8,9 +8,10 @@ let httpOptions = { responseType: 'text' };
   providedIn: 'root'
 })
 export class ProductService {
-
+product!:Product;
   private BackEndURL:String;
   constructor(private http:HttpClient) { 
+    this.product= new Product();
     this.BackEndURL="http://localhost:3000/";
   }
   public Save(product:Product){
@@ -25,8 +26,21 @@ export class ProductService {
     return this.http.delete('http://localhost:3000/product/'+id);
     
   }
-  update(id:number,title:String,author:String){
-    return this.http.post(this.BackEndURL+""+id+'/'+title+'/'+author,httpOptions).pipe(
+  update(id:number,name:String,image:String,likes:number,prix:number){
+    this.product.id=id;
+    this.product.name=name;
+    this.product.image=image;
+    this.product.likes=likes;
+    this.product.Prix=prix;
+    /*return this.http.put(this.BackEndURL+"product/"+this.product,httpOptions).pipe(
+       map(
+         userData => {
+
+         }
+       )
+ 
+     );*/
+      return this.http.put(this.BackEndURL+"product/"+id,this.product).pipe(
        map(
          userData => {
 

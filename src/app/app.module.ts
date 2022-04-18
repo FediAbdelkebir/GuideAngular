@@ -15,6 +15,7 @@ import { DetailProductComponent } from './detail-product/detail-product.componen
 import { HomeComponent } from './home/home.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { ProductShowcaseComponent } from './product-showcase/product-showcase.component';
+import { UpdateproductComponent } from './updateproduct/updateproduct.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { ProductShowcaseComponent } from './product-showcase/product-showcase.co
     NotFoundComponent,
     DetailProductComponent,
     HomeComponent,
-    ProductShowcaseComponent
+    ProductShowcaseComponent,
+    UpdateproductComponent
     
   ],
   imports: [
@@ -51,6 +53,9 @@ import { ProductShowcaseComponent } from './product-showcase/product-showcase.co
       },{
         path:'DetailProduct/:id/:image',
         component:DetailProductComponent
+      },{
+        path:'UpdateProduct/:id/:name/:image/:likes/:Prix',
+        component:UpdateproductComponent
       },{
         path:'ShowCase',
         component:ProductShowcaseComponent

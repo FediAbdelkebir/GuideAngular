@@ -56,4 +56,7 @@ this.ngOnInit();
   DetailProduct(id:any){
     this.router.navigate(['/DetailProduct',id]);
   }
+  UpdateProduct(product:Product){
+    this.router.navigate(['/UpdateProduct',product.id,product.name,product.image,product.likes,product.Prix]);
+  }
 }
